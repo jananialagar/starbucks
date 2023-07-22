@@ -51,6 +51,11 @@ header ul li a{
     margin-left: 60px;
     text-decoration: none;
 }
+.sci
+{
+    position: static;
+    margin-left: 450px;
+}
 .content
 {
     position: relative;
@@ -68,7 +73,7 @@ header ul li a{
 .content .textBox h2{
     color: #333;
     font-size: 4em;
-    line-height: 1.4em;
+    line-height: 1.8em;
     font-weight: 500;
 }
 .content .textBox h2 span
@@ -125,26 +130,13 @@ header ul li a{
 .thumb li:hover
 {
     transform: translateY(-15px);
+    
 }
 .thumb li img
 {
     max-width: 60px;
 }
-.sci{
-    position: absolute;
-    top: 50;
-    right: 30px;
-    transform: translateY(-50%);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.sci li a{
-    display:inline-block;
-    margin:5px;
-    transform: scale(0.0);
-    filter:invert(3);
-}
+
 .circle{
     position: absolute;
     top: 0;
@@ -153,5 +145,7 @@ header ul li a{
     height: 100%;
     background: #017143;
     clip-path: circle(600px at right 800px);
+    transform: rotateX( 3600deg);
 }
-   
+
+    
