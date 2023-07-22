@@ -21,7 +21,7 @@ header
     position: absolute;
     top: 0;
     left: 0;
-    width: 60%;
+    width: 90%;
     padding:20px 100px;
     display:flex;
     justify-content:space-between;
@@ -46,7 +46,7 @@ header ul li a{
     display: inline-block;
     color: #333;
     font-weight: 400;
-    margin-left: 40px;
+    margin-left: 60px;
     text-decoration: none;
 }
 .content
@@ -55,7 +55,7 @@ header ul li a{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: right;
 }
 .content .textBox
 {
@@ -89,39 +89,43 @@ header ul li a{
     text-decoration: none;
 }
 .content .imgBox{
-    width:200px;
+    width:  100px;
     display:flex;
     justify-content: flex-end;
-    padding-right: 50px;
-    margin-top: 50px;
+    padding-right: 100px;
+    margin-top: 60px;
 }
 .content .imgBox img{
-    max-width: 100px;
+    max-width: 500px;
 }
-.lowimage{
-    height: 300px;
+.imgBox{
+    position: relative;
+    width: 100%;
+}
+.thumb{
+    
     position: absolute;
-    width: 500px;
-    width: 1500px;
+    
     left: 50%;
     bottom: 20%;
     transform: translateX(-50%);
     display: flex;
-    object-fit:scale-down;
+    
 
 }
-.lowimage{
+.thumb li{
     list-style: none;
     display: inline-block;
     margin: 0.20px;
     cursor: pointer;
     transition: 0.5x;
 }
-.lowimage li:hover
+.thumb li:hover
 {
     transform: translateY(-15px);
 }
-.lowimage{
+.thumb li img
+{
     max-width: 60px;
 }
 .sci{
@@ -137,6 +141,7 @@ header ul li a{
     display:inline-block;
     margin:5px;
     transform: scale(0.0);
+    filter:invert(1);
 }
 .circle{
     position: absolute;
@@ -146,5 +151,5 @@ header ul li a{
     height: 100%;
     background: #017143;
     clip-path: circle(600px at right 800px);
-
 }
+   
